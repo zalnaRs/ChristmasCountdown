@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christmas Countdown</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <div aria-hidden="true" class="dialog" id="infoDialog">
+      <button
+        onclick="closeInfoDialog()"
+        style="position: fixed; top: 0; right: 0; margin: 10px"
+      >
+        Close
+      </button>
+      <ul>
+        <li><a href="https://zalnars.cf">Made by zalnaRs</a></li>
+        <li><a href="https://github.com/zalnaRs/ChristmasCountdown">Open source</a></li>
+      </ul>
+    </div>
+    <div class="center">
+      <h1 style="margin-bottom: 8px">How much until christmas?</h1>
+      <div class="row">
+        <div>
+          <h1 id="days">0</h1>
+          <sup>Days</sup>
+        </div>
+        <div>
+          <h1 id="hours">0</h1>
+          <sup>Hours</sup>
+        </div>
+        <div>
+          <h1 id="minutes">0</h1>
+          <sup>Minutes</sup>
+        </div>
+        <div>
+          <h1 id="seconds">0</h1>
+          <sup>Seconds</sup>
+        </div>
+      </div>
+      <a onclick="openInfoDialog()" style="margin-top: 8px"
+        >Info about the creator.
+      </a>
+    </div>
+  </body>
+</html>

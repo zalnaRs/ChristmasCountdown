@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  transition: all 200ms ease-in-out;
+  font-family: 'M PLUS 2', sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+  background: white;
+  overflow: hidden;
+}
+
+button {
+  color: black !important;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px 8px 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(0.8);
+}
+
+button:active {
+  filter: brightness(0.7);
+}
+
+a {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.dialog {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  background: #f0f0f0;
+}
+
+.center {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+}
+
+.center .row div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 8px;
+  background: #f16c55;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.center .row div:hover {
+  filter: brightness(0.8);
+}
+
+@media (prefers-color-scheme: dark) {
+  * {
+    color: white !important;
+  }
+
+  button {
+    color: black !important;
+  }
+
+  html,
+  body {
+    background: #202020;
+  }
+
+  .dialog {
+    background: #101010;
+  }
+}
